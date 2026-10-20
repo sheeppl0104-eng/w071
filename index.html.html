@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水餃 | 毛孩的酷炫秘密基地</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        neon: {
+                            pink: '#ff007f',
+                            cyan: '#00f3ff',
+                            purple: '#b026ff',
+                            yellow: '#ffe600',
+                            dark: '#0c0c14',
+                            card: '#161626'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Zen Maru Gothic"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0c0c14;
+            color: #e2e8f0;
+            font-family: 'Zen Maru Gothic', sans-serif;
+        }
+        
+        /* 霓虹發光效果 */
+        .neon-text-pink {
+            text-shadow: 0 0 5px #ff007f, 0 0 15px #ff007f, 0 0 30px #ff007f;
+        }
+        .neon-text-cyan {
+            text-shadow: 0 0 5px #00f3ff, 0 0 15px #00f3ff, 0 0 30px #00f3ff;
+        }
+        .neon-border-pink {
+            box-shadow: 0 0 10px #ff007f, inset 0 0 10px #ff007f;
+        }
+        .neon-border-cyan {
+            box-shadow: 0 0 10px #00f3ff, inset 0 0 10px #00f3ff;
+        }
+        .neon-box-glow {
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.25), 0 0 10px rgba(255, 0, 127, 0.2);
+        }
+        .neon-box-glow:hover {
+            box-shadow: 0 0 30px rgba(0, 243, 255, 0.4), 0 0 15px rgba(255, 0, 127, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-neon-pink selection:text-white">
+
+    <!-- 導覽列 Navigation -->
+    <header class="sticky top-0 z-50 bg-neon-dark/90 backdrop-blur-md border-b border-neon-purple/40 shadow-lg">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-neon-pink to-neon-purple flex items-center justify-center text-white font-bold text-xl shadow-[0_0_15px_rgba(255,0,127,0.5)]">
+                    🥟
+                </div>
+                <span class="text-3xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan via-white to-neon-pink neon-text-cyan">水餃</span>
+            </div>
+            <nav class="hidden sm:flex space-x-6 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-neon-cyan transition-all hover:scale-105">關於水餃</a>
+                <a href="#services" class="hover:text-neon-cyan transition-all hover:scale-105">服務項目</a>
+                <a href="#notice" class="hover:text-neon-cyan transition-all hover:scale-105">貼心叮嚀</a>
+                <a href="#contact" class="hover:text-neon-cyan transition-all hover:scale-105">聊聊天</a>
+            </nav>
+            <a href="#contact" class="bg-gradient-to-r from-neon-pink to-neon-purple hover:from-neon-purple hover:to-neon-pink text-white font-bold px-5 py-2 rounded-full text-sm transition-all shadow-[0_0_15px_rgba(255,0,127,0.4)] hover:shadow-[0_0_25px_rgba(255,0,127,0.7)] active:scale-95">
+                預約托育 <i class="fa-solid fa-bolt ml-1 text-xs"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="max-w-4xl mx-auto px-6 pt-12 pb-16 text-center sm:text-left sm:flex sm:items-center sm:justify-between gap-8">
+            <div class="sm:w-1/2 space-y-5">
+                <div class="inline-block bg-neon-purple/20 border border-neon-purple/50 text-neon-cyan px-4 py-1.5 rounded-full text-xs font-bold tracking-wider shadow-[0_0_10px_rgba(176,38,255,0.3)]">
+                    🐾 上班族的好幫手 · 小型犬放電派對
+                </div>
+                <h1 class="text-3xl sm:text-4xl font-black leading-snug tracking-wide">
+                    嘿老朋友！今天加班辛苦啦～<br>
+                    小寶貝在<span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-neon-yellow neon-text-pink">「水餃」</span>玩得超開心！
+                </h1>
+                <p class="text-slate-300 leading-relaxed text-base font-medium">
+                    知道你每天奔波辛苦，心疼毛孩獨自看家吧？在「水餃」，我們就像老朋友聚會一樣，給狗狗最酷、最溫暖的陪伴。安心打拼去吧，這裡隨時準備好爆棚的愛等著牠！
+                </p>
+                <div class="pt-2 flex flex-wrap gap-3 justify-center sm:justify-start">
+                    <a href="#contact" class="bg-neon-pink hover:bg-pink-600 text-white font-bold px-6 py-3 rounded-2xl shadow-[0_0_15px_rgba(255,0,127,0.5)] transition-all flex items-center gap-2 hover:scale-105">
+                        <i class="fa-brands fa-line text-xl"></i> 敲 LINE 聊狀況
+                    </a>
+                    <a href="#services" class="bg-neon-card border border-neon-cyan/40 text-neon-cyan hover:bg-neon-cyan/10 font-bold px-6 py-3 rounded-2xl transition-all hover:scale-105">
+                        看看今天玩什麼
+                    </a>
+                </div>
+            </div>
+            <div class="sm:w-1/2 mt-8 sm:mt-0 flex justify-center">
+                <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl bg-gradient-to-br from-neon-pink/30 to-neon-cyan/30 p-1 neon-box-glow transform rotate-2 hover:rotate-0 transition-all duration-300">
+                    <div class="w-full h-full bg-neon-card rounded-[22px] overflow-hidden relative">
+                        <img src="https://placehold.co/600x600/161626/00f3ff?text=Happy+Cute+Dog" 
+                             alt="可愛小型犬" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=600&q=80'">
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-neon-card border border-neon-pink/50 p-3 rounded-2xl shadow-[0_0_15px_rgba(255,0,127,0.3)] flex items-center gap-3">
+                        <span class="text-2xl animate-bounce">🐶</span>
+                        <div class="text-xs">
+                            <p class="font-bold text-neon-pink">今天狀態滿分！</p>
+                            <p class="text-slate-300">隨時傳放電影片給你唷</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 關於我們 About -->
+        <section id="about" class="bg-neon-card/80 py-12 border-y border-neon-purple/30 backdrop-blur-sm">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto space-y-3">
+                    <h2 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-neon-pink">為什麼叫「水餃」？</h2>
+                    <p class="text-slate-300 leading-relaxed font-medium">
+                        因為包水餃的時候，要把最實打實的餡料溫柔包裹起來——「水餃」也是這樣！把我們滿滿的耐心與關愛，把每隻來作客的小寶貝抱個滿懷。這裡就像牠們的第二個家，熟門熟路，自在又快樂！
+                    </p>
+                </div>
+
+                <div class="grid sm:grid-cols-3 gap-6 mt-10">
+                    <div class="bg-neon-dark p-6 rounded-2xl border border-neon-cyan/30 text-center space-y-2 hover:border-neon-cyan transition-all">
+                        <div class="w-12 h-12 bg-neon-cyan/20 text-neon-cyan rounded-full flex items-center justify-center mx-auto text-xl mb-3 shadow-[0_0_10px_rgba(0,243,255,0.3)]">
+                            <i class="fa-solid fa-house-chimney-user"></i>
+                        </div>
+                        <h3 class="font-bold text-white">無籠溫馨小天地</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">沒有冰冷的鐵籠壓迫，設有超軟靠墊與遊戲區，專為小型犬打造的放鬆空間。</p>
+                    </div>
+                    <div class="bg-neon-dark p-6 rounded-2xl border border-neon-pink/30 text-center space-y-2 hover:border-neon-pink transition-all">
+                        <div class="w-12 h-12 bg-neon-pink/20 text-neon-pink rounded-full flex items-center justify-center mx-auto text-xl mb-3 shadow-[0_0_10px_rgba(255,0,127,0.3)]">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h3 class="font-bold text-white">上班族彈性接送</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">太懂加班的苦了！接送時間超彈性，不用急忙趕場，放心地衝刺事業吧。</p>
+                    </div>
+                    <div class="bg-neon-dark p-6 rounded-2xl border border-neon-purple/30 text-center space-y-2 hover:border-neon-purple transition-all">
+                        <div class="w-12 h-12 bg-neon-purple/20 text-neon-purple rounded-full flex items-center justify-center mx-auto text-xl mb-3 shadow-[0_0_10px_rgba(176,38,255,0.3)]">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <h3 class="font-bold text-white">即時連線療癒</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">午休時間隨時查看萌照與影片，工作累了打開手機，立刻被寶貝療癒滿格！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 服務項目 Services -->
+        <section id="services" class="py-12 max-w-4xl mx-auto px-6">
+            <h2 class="text-2xl font-black text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-neon-pink via-neon-purple to-neon-cyan">「水餃」貼心服務項目</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- 服務 1 -->
+                <div class="bg-neon-card p-6 rounded-3xl border border-neon-cyan/40 neon-box-glow flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xl font-bold text-neon-cyan">日托陪伴（日間安親）</span>
+                            <span class="bg-neon-cyan/20 border border-neon-cyan text-neon-cyan text-xs font-bold px-3 py-1 rounded-full">上班族神救援</span>
+                        </div>
+                        <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                            出門上班前放心把寶貝交給我，下班再高高興興帶回家！白天有夥伴陪玩、定時散步、細心餵食，再也不用擔心毛孩在家無聊拆家。
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-check text-neon-pink mr-2"></i> 小型犬專屬互動與遊戲放電</li>
+                            <li><i class="fa-solid fa-check text-neon-pink mr-2"></i> 定時散步放風與嗅聞時光</li>
+                            <li><i class="fa-solid fa-check text-neon-pink mr-2"></i> 專業照看餵食、補充水分與餵藥</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex justify-between items-center">
+                        <span class="text-sm font-bold text-neon-yellow">老朋有甜甜價預約中</span>
+                        <a href="#contact" class="text-xs bg-neon-cyan text-neon-dark font-bold px-4 py-2 rounded-xl transition-all hover:bg-white hover:shadow-[0_0_10px_rgba(0,243,255,0.8)]">私訊敲定</a>
+                    </div>
+                </div>
+
+                <!-- 服務 2 -->
+                <div class="bg-neon-card p-6 rounded-3xl border border-neon-pink/40 neon-box-glow flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xl font-bold text-neon-pink">洗澡香香與基礎護理</span>
+                            <span class="bg-neon-pink/20 border border-neon-pink text-neon-pink text-xs font-bold px-3 py-1 rounded-full">溫柔SPA</span>
+                        </div>
+                        <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                            選用低敏溫和的洗劑與舒適的水溫，洗澡過程輕柔安撫不強迫，小型犬洗澡不再有壓力，回家直接抱著睡香香！
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-check text-neon-cyan mr-2"></i> 溫柔剪指甲、修剪腳底毛</li>
+                            <li><i class="fa-solid fa-check text-neon-cyan mr-2"></i> 仔細清潔耳朵與肛門腺護理</li>
+                            <li><i class="fa-solid fa-check text-neon-cyan mr-2"></i> 全身手吹梳毛與放鬆按摩</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex justify-between items-center">
+                        <span class="text-sm font-bold text-neon-yellow">依體重與毛量報價</span>
+                        <a href="#contact" class="text-xs bg-neon-pink text-white font-bold px-4 py-2 rounded-xl transition-all hover:bg-pink-600 hover:shadow-[0_0_10px_rgba(255,0,127,0.8)]">預約洗香香</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 貼心叮嚀 Notice -->
+        <section id="notice" class="bg-neon-card/40 py-10 my-6">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="bg-neon-dark rounded-3xl p-6 sm:p-8 border border-neon-purple/50 shadow-[0_0_15px_rgba(176,38,255,0.15)]">
+                    <h3 class="text-xl font-bold text-neon-yellow mb-4 flex items-center gap-2">
+                        <span>💡</span> 給水餃熟客們的小叮嚀
+                    </h3>
+                    <div class="grid sm:grid-cols-2 gap-4 text-sm text-slate-300 leading-relaxed">
+                        <div class="flex items-start gap-2">
+                            <span class="text-neon-cyan font-bold">•</span>
+                            <p>為了大家毛孩的健康，過來前記得幫寶貝確認好年度疫苗與定期驅蟲唷！</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-neon-cyan font-bold">•</span>
+                            <p>「水餃」專為小型犬服務，讓體型相近的小夥伴能無壓力地玩在一塊。</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-neon-cyan font-bold">•</span>
+                            <p>寶貝如果有偏食、小脾氣或特殊照顧需求，隨時跟我講，我會多加照顧！</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-neon-cyan font-bold">•</span>
+                            <p>突然要加班千萬別客氣！敲個 LINE 跟我說一聲，接送時間隨時彈性調整。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 聯絡我們 Contact -->
+        <section id="contact" class="py-12 max-w-4xl mx-auto px-6 text-center">
+            <div class="bg-gradient-to-b from-neon-card to-neon-dark p-8 sm:p-12 rounded-3xl border border-neon-cyan/40 neon-box-glow space-y-6">
+                <div class="inline-block bg-neon-purple/30 border border-neon-purple text-neon-cyan p-3 rounded-full text-2xl shadow-[0_0_15px_rgba(176,38,255,0.5)]">
+                    🍵
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan via-white to-neon-pink">下班接寶貝，順便來水餃坐坐聊聊天！</h2>
+                <p class="text-slate-300 max-w-lg mx-auto text-sm sm:text-base">
+                    想安排托育或洗澡嗎？隨時傳個訊息給我，就像跟老朋友傳訊息一樣輕鬆自在～
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-2">
+                    <a href="javascript:void(0)" onclick="const el=document.createElement('textarea');el.value='@dumpling_studio';document.body.appendChild(el);el.select();document.execCommand('copy');document.body.removeChild(el);alert('LINE ID 已複製：@dumpling_studio');" class="w-full sm:w-auto bg-neon-pink hover:bg-pink-600 text-white font-bold px-8 py-3.5 rounded-2xl transition-all shadow-[0_0_15px_rgba(255,0,127,0.5)] hover:shadow-[0_0_25px_rgba(255,0,127,0.8)] flex items-center justify-center gap-2 hover:scale-105">
+                        <i class="fa-brands fa-line text-2xl"></i> LINE 找水餃 (@dumpling_studio)
+                    </a>
+                    <a href="tel:0912345678" class="w-full sm:w-auto bg-neon-card border border-neon-cyan/50 text-neon-cyan hover:bg-neon-cyan hover:text-neon-dark font-bold px-8 py-3.5 rounded-2xl transition-all shadow-[0_0_10px_rgba(0,243,255,0.2)] flex items-center justify-center gap-2 hover:scale-105">
+                        <i class="fa-solid fa-phone text-base"></i> 打給水餃
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 頁尾 Footer -->
+    <footer class="bg-neon-dark text-slate-400 py-8 border-t border-neon-purple/30">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-4">
+            <div class="flex justify-center items-center space-x-2">
+                <span class="text-2xl">🥟</span>
+                <span class="font-black text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-neon-pink text-xl">水餃</span>
+            </div>
+            <p class="text-xs text-slate-400">
+                專為小型犬與忙碌上班族毛爸媽打造的酷炫秘密基地 · 用最真誠的心呵護每一個寶貝
+            </p>
+            <div class="text-xs text-slate-500 pt-4 border-t border-slate-800">
+                © 2026 水餃 Dumpling Studio. All rights reserved.
+            </div>
+            <!-- 指定新增標記 -->
+            <div class="pt-2 text-sm text-neon-pink font-bold tracking-widest neon-text-pink">
+                木頭人
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
